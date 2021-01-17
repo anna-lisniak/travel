@@ -1,0 +1,106 @@
+p {
+    margin: 0;
+}
+
+.transfering {
+    background-color: grey;
+    height: 0px;
+    border: 1.5px solid grey;
+    top: 1.5px;
+    /* bottom: 3px; */
+}
+.flying {
+    background-color: black;
+    height: 0px;
+    /* bottom: 1.5px; */
+    border: 3px solid black;
+    border-radius: 8px;
+    z-index: 5;
+}
+
+/* .way {
+    position: relative;
+} */
+.way:hover {
+    transform: scale(1.2);
+}
+
+.flight-time {
+    padding: 5px;
+    color: black;
+}
+
+.flight-price {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+.flight-price:hover > p {
+    display: none;
+}
+.flight-price:hover > .flight-buy-button {
+    display: block;
+}
+
+.flight-buy-button {
+    display: none;
+    margin: auto;
+}
+
+.flight-container {
+    display: flex;
+    align-items: baseline;
+    padding: 1rem;
+    min-height: 6rem;
+}
+
+
+.apartament-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100px;
+}
+.apartament-item {
+    position: relative;
+    /* height: 10px; */
+    margin: 10px;
+}
+
+.apartament-photo {
+    /* position: absolute; */
+    /* margin: auto; */
+    z-index: 10;
+    height: 90px;
+}
+
+.apartament-buy-button {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    margin-left: 8px;
+    margin-top: 30px;
+}
+
+.apartament-item:hover > .apartament-photo {
+    z-index: 4;
+    opacity: 0.5;
+}
+.apartament-item:hover > .apartament-buy-button {
+    display: block;
+}
+
+/* .apartament-container:hover > .apartament-buy-button {
+    display: block;
+}
+
+.apartament-container:hover > .apartament-item {
+    display: none;
+} */
+
+.ticket-info-container {
+    width: 100%;
+}

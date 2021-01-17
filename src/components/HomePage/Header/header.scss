@@ -1,0 +1,32 @@
+.navigation-container {
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .custom-input {
+    outline: none;
+    border: none;
+    background-color: #bfd5df;
+    border-radius: 1rem;
+    height: 40px;
+    padding: 0 15px;
+    margin: 10px;
+    font-size: 1rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace !important;
+
+    &.date-picker {
+      display: flex;
+      align-items: center;
+      border-bottom: 3px solid #bfd5df;
+    }
+  }
+
+  .custom-input:hover {
+    background-color: #9abdcc;
+  }
+}

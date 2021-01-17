@@ -1,0 +1,7 @@
+.main-menu-container > * {
+    background-color: #3d5a80;
+    border-radius: 1rem;
+    &:hover {
+        background-color: #5a769e !important;
+    }
+}
